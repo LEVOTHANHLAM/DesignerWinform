@@ -65,7 +65,7 @@ namespace Overview.Controls
             // header1
             // 
             header1.Dock = DockStyle.Top;
-            header1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            header1.Font = new Font("Microsoft YaHei UI", 12F);
             header1.Location = new Point(0, 0);
             header1.Name = "header1";
             header1.Padding = new Padding(6);
@@ -96,7 +96,7 @@ namespace Overview.Controls
             segmentedItem4.Img = Properties.Resources.bg5;
             segmentedItem4.Text = "Quarterly";
             segmented2.Items.AddRange(new AntdUI.SegmentedItem[] { segmentedItem1, segmentedItem2, segmentedItem3, segmentedItem4 });
-            segmented2.Location = new Point(3, 55);
+            segmented2.Location = new Point(262, 65);
             segmented2.Margin = new Padding(1);
             segmented2.Name = "segmented2";
             segmented2.SelectIndex = 0;
@@ -121,7 +121,7 @@ namespace Overview.Controls
             // 
             Controls.Add(panel1);
             Controls.Add(header1);
-            Font = new Font("Microsoft YaHei UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Microsoft YaHei UI", 10F);
             Name = "Segmented";
             Size = new Size(1300, 676);
             panel1.ResumeLayout(false);
