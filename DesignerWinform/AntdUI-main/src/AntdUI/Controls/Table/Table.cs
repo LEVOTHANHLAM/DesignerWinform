@@ -45,20 +45,33 @@ namespace AntdUI
             set
             {
                 if (columns == value) return;
-                if (dataSource == null)
-                {
-                    columns = value;
-                    ExtractHeader();
-                    return;
-                }
-                List<string> oldid = new List<string>(), id = new List<string>();
-                if (columns != null) foreach (var col in columns) oldid.Add(col.Key);
-                if (value != null) foreach (var col in value) id.Add(col.Key);
                 columns = value;
-                if (string.Join("", oldid) != string.Join("", id)) { ExtractHeader(); ExtractData(); }
+                if (dataSource == null || value != null) // Thêm điều kiện dataSource == null
+                {
+                    ExtractHeader();
+                    ExtractData();
+                }
                 LoadLayout();
                 Invalidate();
             }
+            //get => columns;
+            //set
+            //{
+            //    if (columns == value) return;
+            //    if (dataSource == null)
+            //    {
+            //        columns = value;
+            //        ExtractHeader();
+            //        return;
+            //    }
+            //    List<string> oldid = new List<string>(), id = new List<string>();
+            //    if (columns != null) foreach (var col in columns) oldid.Add(col.Key);
+            //    if (value != null) foreach (var col in value) id.Add(col.Key);
+            //    columns = value;
+            //    if (string.Join("", oldid) != string.Join("", id)) { ExtractHeader(); ExtractData(); }
+            //    LoadLayout();
+            //    Invalidate();
+            //}
         }
 
         object? dataSource = null;

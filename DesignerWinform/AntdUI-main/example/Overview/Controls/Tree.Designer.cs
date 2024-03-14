@@ -46,6 +46,8 @@ namespace Overview.Controls
         /// </summary>
         private void InitializeComponent()
         {
+            AntdUI.TreeItem treeItem1 = new AntdUI.TreeItem();
+            AntdUI.TreeItem treeItem2 = new AntdUI.TreeItem();
             header1 = new AntdUI.Header();
             tree1 = new AntdUI.Tree();
             tree2 = new AntdUI.Tree();
@@ -54,7 +56,7 @@ namespace Overview.Controls
             // header1
             // 
             header1.Dock = DockStyle.Top;
-            header1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            header1.Font = new Font("Microsoft YaHei UI", 12F);
             header1.Location = new Point(0, 0);
             header1.Name = "header1";
             header1.Padding = new Padding(6);
@@ -67,7 +69,9 @@ namespace Overview.Controls
             // 
             tree1.Checkable = true;
             tree1.Dock = DockStyle.Left;
-            tree1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tree1.Font = new Font("Microsoft YaHei UI", 12F);
+            treeItem1.Text = "aaa";
+            tree1.Items.AddRange(new AntdUI.TreeItem[] { treeItem1, treeItem2 });
             tree1.Location = new Point(0, 79);
             tree1.Name = "tree1";
             tree1.Size = new Size(328, 323);
@@ -78,7 +82,7 @@ namespace Overview.Controls
             // 
             tree2.BlockNode = true;
             tree2.Dock = DockStyle.Fill;
-            tree2.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tree2.Font = new Font("Microsoft YaHei UI", 12F);
             tree2.Location = new Point(328, 79);
             tree2.Name = "tree2";
             tree2.Size = new Size(412, 323);
@@ -90,7 +94,7 @@ namespace Overview.Controls
             Controls.Add(tree2);
             Controls.Add(tree1);
             Controls.Add(header1);
-            Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Microsoft YaHei UI", 12F);
             Name = "Tree";
             Size = new Size(740, 402);
             ResumeLayout(false);

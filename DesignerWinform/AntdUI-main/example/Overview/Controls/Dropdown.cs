@@ -64,5 +64,10 @@ namespace Overview.Controls
         {
             AntdUI.Message.info((Form)Parent, "ÒÑÑ¡ÖÐ£º" + value, Font);
         }
+
+        private void button8_SelectedValueChanged(object sender, object value)
+        {
+
+        }
     }
 }

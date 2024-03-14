@@ -35,15 +35,15 @@ namespace Overview.Controls
                 new AntdUI.Column("btns","操作"){ Fixed=true},
             };// 添加表头，绑定模型名称
 
-            var list = new List<TestClass>(10) {
-                new TestClass(1,"1","胡彦斌",32,"西湖区湖底公园1号"),
-                new TestClass(2,"2","胡彦祖",43,"西湖区湖底公园1号") {
-                    tag=new AntdUI.CellTag[]{ new AntdUI.CellTag("NICE", AntdUI.TTypeMini.Success), new AntdUI.CellTag("DEVELOPER", AntdUI.TTypeMini.Info) }
-                },
-            };// 添加数据
-            for (int i = 2; i < 10; i++) list.Add(new TestClass(i, i.ToString(), "胡彦斌", 100, "西湖区湖底公园" + (i + 10) + "号"));
+            //var list = new List<TestClass>(10) {
+            //    new TestClass(1,"1","胡彦斌",32,"西湖区湖底公园1号"),
+            //    new TestClass(2,"2","胡彦祖",43,"西湖区湖底公园1号") {
+            //        tag=new AntdUI.CellTag[]{ new AntdUI.CellTag("NICE", AntdUI.TTypeMini.Success), new AntdUI.CellTag("DEVELOPER", AntdUI.TTypeMini.Info) }
+            //    },
+            //};// 添加数据
+            //for (int i = 2; i < 10; i++) list.Add(new TestClass(i, i.ToString(), "胡彦斌", 100, "西湖区湖底公园" + (i + 10) + "号"));
 
-            table1.DataSource = list;
+            //table1.DataSource = list;
 
 
             table2.Columns = new AntdUI.Column[] {

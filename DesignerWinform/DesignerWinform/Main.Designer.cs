@@ -58,37 +58,45 @@ namespace DesignerWinform
             selecToolStripMenuItem = new ToolStripMenuItem();
             huyChonToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
-            panel3 = new Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             panel6 = new Panel();
             input9 = new AntdUI.Input();
             button2 = new AntdUI.Button();
-            pictureBox3 = new PictureBox();
-            panel8 = new Panel();
-            select6 = new AntdUI.Select();
             button16 = new AntdUI.Button();
             button17 = new AntdUI.Button();
             tabPage2 = new TabPage();
-            label2 = new Label();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            pictureBox4 = new PictureBox();
+            panel7 = new Panel();
+            input1 = new AntdUI.Input();
+            button1 = new AntdUI.Button();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            panel9 = new Panel();
+            select1 = new AntdUI.Select();
+            button4 = new AntdUI.Button();
+            table2 = new AntdUI.Table();
             tabPage3 = new TabPage();
-            label3 = new Label();
             tabPage5 = new TabPage();
             tabPage6 = new TabPage();
+            panel3 = new Panel();
+            select2 = new AntdUI.Select();
             windowBar.SuspendLayout();
             tabs1.SuspendLayout();
             tabPage1.SuspendLayout();
             panel2.SuspendLayout();
             contextMenuStrip1.SuspendLayout();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel8.SuspendLayout();
             tabPage2.SuspendLayout();
-            tabPage3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel9.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // btn_mode
@@ -198,6 +206,7 @@ namespace DesignerWinform
             // panel1
             // 
             panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel6);
             panel1.Controls.Add(button16);
             panel1.Controls.Add(button17);
             panel1.Dock = DockStyle.Top;
@@ -207,47 +216,12 @@ namespace DesignerWinform
             panel1.Size = new Size(1286, 40);
             panel1.TabIndex = 1;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Controls.Add(panel6);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Controls.Add(panel8);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(512, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(769, 40);
-            panel3.TabIndex = 19;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox2.Image = Properties.Resources.icons8_minus_35;
-            pictureBox2.Location = new Point(437, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(35, 35);
-            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox2.TabIndex = 17;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox1.Image = Properties.Resources.icons8_add_35__1_;
-            pictureBox1.Location = new Point(398, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
-            // 
             // panel6
             // 
             panel6.Controls.Add(input9);
             panel6.Controls.Add(button2);
             panel6.Dock = DockStyle.Right;
-            panel6.Location = new Point(519, 0);
+            panel6.Location = new Point(1031, 0);
             panel6.Name = "panel6";
             panel6.Size = new Size(250, 40);
             panel6.TabIndex = 14;
@@ -277,39 +251,6 @@ namespace DesignerWinform
             button2.TabIndex = 1;
             button2.Type = AntdUI.TTypeMini.Primary;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            pictureBox3.Image = Properties.Resources.icons8_transfer_35;
-            pictureBox3.Location = new Point(476, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(35, 35);
-            pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox3.TabIndex = 18;
-            pictureBox3.TabStop = false;
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(select6);
-            panel8.Location = new Point(136, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(250, 40);
-            panel8.TabIndex = 15;
-            panel8.Text = "panel4";
-            // 
-            // select6
-            // 
-            select6.AllowClear = true;
-            select6.Dock = DockStyle.Fill;
-            select6.Items.AddRange(new object[] { "Lucy", "Tom", "AduSkin", "WangLi", "HUAWEI", "XIAOMI" });
-            select6.JoinRight = true;
-            select6.Location = new Point(0, 0);
-            select6.Margins = 6;
-            select6.Name = "select6";
-            select6.PlaceholderText = "";
-            select6.Size = new Size(250, 40);
-            select6.TabIndex = 0;
-            // 
             // button16
             // 
             button16.Dock = DockStyle.Left;
@@ -335,7 +276,8 @@ namespace DesignerWinform
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(panel4);
+            tabPage2.Controls.Add(table2);
             tabPage2.Location = new Point(4, 58);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -344,19 +286,146 @@ namespace DesignerWinform
             tabPage2.Text = "Database";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // panel4
             // 
-            label2.AutoSize = true;
-            label2.Dock = DockStyle.Top;
-            label2.Location = new Point(3, 3);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 19);
-            label2.TabIndex = 1;
-            label2.Text = "Tab 2";
+            panel4.Controls.Add(panel5);
+            panel4.Controls.Add(button4);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(3, 3);
+            panel4.Name = "panel4";
+            panel4.Padding = new Padding(5, 0, 5, 0);
+            panel4.Size = new Size(1286, 40);
+            panel4.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(pictureBox4);
+            panel5.Controls.Add(panel7);
+            panel5.Controls.Add(pictureBox5);
+            panel5.Controls.Add(pictureBox6);
+            panel5.Controls.Add(panel9);
+            panel5.Dock = DockStyle.Right;
+            panel5.Location = new Point(512, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(769, 40);
+            panel5.TabIndex = 20;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            pictureBox4.Image = Properties.Resources.icons8_minus_35;
+            pictureBox4.Location = new Point(431, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(35, 35);
+            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox4.TabIndex = 17;
+            pictureBox4.TabStop = false;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(input1);
+            panel7.Controls.Add(button1);
+            panel7.Dock = DockStyle.Right;
+            panel7.Location = new Point(519, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(250, 40);
+            panel7.TabIndex = 14;
+            panel7.Text = "panel4";
+            // 
+            // input1
+            // 
+            input1.Dock = DockStyle.Fill;
+            input1.JoinRight = true;
+            input1.Location = new Point(0, 0);
+            input1.Margins = 6;
+            input1.Name = "input1";
+            input1.PlaceholderText = "Search";
+            input1.Size = new Size(200, 40);
+            input1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.Dock = DockStyle.Right;
+            button1.ImageSvg = Properties.Resources.icon_search;
+            button1.JoinLeft = true;
+            button1.Location = new Point(200, 0);
+            button1.Margins = 6;
+            button1.Name = "button1";
+            button1.Size = new Size(50, 40);
+            button1.TabIndex = 1;
+            button1.Type = AntdUI.TTypeMini.Primary;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            pictureBox5.Image = Properties.Resources.icons8_add_35__1_;
+            pictureBox5.Location = new Point(392, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(35, 35);
+            pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox5.TabIndex = 16;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            pictureBox6.Image = Properties.Resources.icons8_transfer_35;
+            pictureBox6.Location = new Point(472, 2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(35, 35);
+            pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox6.TabIndex = 18;
+            pictureBox6.TabStop = false;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(select1);
+            panel9.Location = new Point(136, 0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(250, 40);
+            panel9.TabIndex = 15;
+            panel9.Text = "panel4";
+            // 
+            // select1
+            // 
+            select1.AllowClear = true;
+            select1.Dock = DockStyle.Fill;
+            select1.Items.AddRange(new object[] { "Lucy", "Tom", "AduSkin", "WangLi", "HUAWEI", "XIAOMI" });
+            select1.JoinRight = true;
+            select1.Location = new Point(0, 0);
+            select1.Margins = 6;
+            select1.Name = "select1";
+            select1.PlaceholderText = "";
+            select1.Size = new Size(250, 40);
+            select1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.Dock = DockStyle.Left;
+            button4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(5, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(146, 40);
+            button4.TabIndex = 12;
+            button4.Text = "Export";
+            button4.Type = AntdUI.TTypeMini.Warn;
+            // 
+            // table2
+            // 
+            table2.Bordered = true;
+            table2.ContextMenuStrip = contextMenuStrip1;
+            table2.Dock = DockStyle.Fill;
+            table2.Font = new Font("Microsoft YaHei UI", 11F);
+            table2.Location = new Point(3, 3);
+            table2.Name = "table2";
+            table2.Size = new Size(1286, 610);
+            table2.TabIndex = 2;
+            table2.Text = "table2";
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(label3);
             tabPage3.Location = new Point(4, 58);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
@@ -365,35 +434,48 @@ namespace DesignerWinform
             tabPage3.Text = "Script";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Top;
-            label3.Location = new Point(3, 3);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 19);
-            label3.TabIndex = 1;
-            label3.Text = "Tab 3";
-            // 
             // tabPage5
             // 
-            tabPage5.Location = new Point(4, 58);
+            tabPage5.Location = new Point(4, 28);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(1292, 616);
+            tabPage5.Size = new Size(192, 68);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "View";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
-            tabPage6.Location = new Point(4, 58);
+            tabPage6.Location = new Point(4, 28);
             tabPage6.Name = "tabPage6";
             tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(1292, 616);
+            tabPage6.Size = new Size(192, 68);
             tabPage6.TabIndex = 5;
             tabPage6.Text = "Setting";
             tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(select2);
+            panel3.Dock = DockStyle.Right;
+            panel3.Location = new Point(781, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 40);
+            panel3.TabIndex = 16;
+            panel3.Text = "panel4";
+            // 
+            // select2
+            // 
+            select2.AllowClear = true;
+            select2.Dock = DockStyle.Fill;
+            select2.Items.AddRange(new object[] { "Lucy", "Tom", "AduSkin", "WangLi", "HUAWEI", "XIAOMI" });
+            select2.JoinRight = true;
+            select2.Location = new Point(0, 0);
+            select2.Margins = 6;
+            select2.Name = "select2";
+            select2.PlaceholderText = "";
+            select2.Size = new Size(250, 40);
+            select2.TabIndex = 0;
             // 
             // Main
             // 
@@ -413,17 +495,17 @@ namespace DesignerWinform
             panel2.ResumeLayout(false);
             contextMenuStrip1.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel8.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
-            tabPage2.PerformLayout();
-            tabPage3.ResumeLayout(false);
-            tabPage3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel9.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -435,9 +517,7 @@ namespace DesignerWinform
         private TabPage tabPage1;
         private Label label1;
         private TabPage tabPage2;
-        private Label label2;
         private TabPage tabPage3;
-        private Label label3;
         private TabPage tabPage5;
         private TabPage tabPage6;
         private Panel panel2;
@@ -448,14 +528,22 @@ namespace DesignerWinform
         private AntdUI.Table table1;
         private AntdUI.Button button17;
         private AntdUI.Button button16;
+        private Panel panel4;
+        private Panel panel5;
+        private PictureBox pictureBox4;
+        private Panel panel7;
+        private AntdUI.Input input1;
+        private AntdUI.Button button1;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private Panel panel9;
+        private AntdUI.Select select1;
+        private AntdUI.Button button4;
+        private AntdUI.Table table2;
         private Panel panel6;
         private AntdUI.Input input9;
         private AntdUI.Button button2;
-        private Panel panel8;
-        private AntdUI.Select select6;
-        private PictureBox pictureBox1;
         private Panel panel3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private AntdUI.Select select2;
     }
 }
